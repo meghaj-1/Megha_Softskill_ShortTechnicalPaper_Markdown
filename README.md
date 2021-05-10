@@ -32,7 +32,7 @@ Full text search is avant-garde way to search a database. Full text search speed
     * Full-text queries are not case-sensitive, "Aluminum" or "aluminum" returns the same results.
 [Reference.3.](https://docs.microsoft.com/en-us/sql/relational-databases/search/full-text-search?view=sql-server-ver15)
 
-## Why Full Text’s CONTAINS Queries Are So Slow
+## Why Full Text Search Queries Are So Slow
 
 Full text search doesn’t fit well in query plans. If a query is quite simple yet searching for an unusual keyword/(s), then full text search performs well. However,when query becomes complex, like more filtering is to be done on other tables, AND the more common your search keywords are, full text performance degrades.  [Reference.4.](https://www.brentozar.com/archive/2020/11/why-full-texts-contains-queries-are-so-slow)
 
